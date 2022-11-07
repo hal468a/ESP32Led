@@ -62,8 +62,8 @@ class NightLight : public Color
     public:
         void LightUp()
         {
-            analogWrite(this->red, 15);
-            analogWrite(this->green, 15);
+            analogWrite(this->red, this->brigth / 2);
+            analogWrite(this->green, this->brigth / 2);
 	        analogWrite(this->blue, 240);
         }
 };
