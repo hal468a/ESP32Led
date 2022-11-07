@@ -17,6 +17,6 @@ class Color
         {
             analogWrite(2, 255);
             analogWrite(3, 255);
-	        analogWrite(4, 255);
+            analogWrite(4, 255);
         }
 };

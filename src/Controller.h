@@ -20,15 +20,15 @@ class Controller
         void IOMonitor()
         {
             Serial.printf("IO1: %d\n", digitalRead(this->IO1));
-	        Serial.printf("IO2: %d\n", digitalRead(this->IO2));
-	        Serial.printf("IO3: %d\n", digitalRead(this->IO3));
-	        Serial.printf("IO4: %d\n", digitalRead(this->IO4));
-	        Serial.printf("IO5: %d\n", digitalRead(this->IO5));
-	        Serial.printf("IO6: %d\n", digitalRead(this->IO6));
-	        Serial.printf("IO7: %d\n", digitalRead(this->IO7));
-	        Serial.printf("IO8: %d\n", digitalRead(this->IO8));
-	        Serial.println("-------------------------");
-	        delay(500);
+            Serial.printf("IO2: %d\n", digitalRead(this->IO2));
+            Serial.printf("IO3: %d\n", digitalRead(this->IO3));
+            Serial.printf("IO4: %d\n", digitalRead(this->IO4));
+            Serial.printf("IO5: %d\n", digitalRead(this->IO5));
+            Serial.printf("IO6: %d\n", digitalRead(this->IO6));
+            Serial.printf("IO7: %d\n", digitalRead(this->IO7));
+            Serial.printf("IO8: %d\n", digitalRead(this->IO8));
+            Serial.println("-------------------------");
+            delay(500);
         }
 
         void LightUp(Color *color)

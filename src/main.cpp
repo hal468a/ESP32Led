@@ -43,14 +43,13 @@ void setup()
 
 void loop()
 {
-    //ctr.IOMonitor();
-	Event_Listener();
-    //delay(1000);
+    ctr.IOMonitor();
+    Event_Listener();
 }
 
 void Event_Listener()
 {
-	if(digitalRead(ctr.IO1) == 1 && digitalRead(ctr.IO2) == 0 && digitalRead(ctr.IO3) == 0 && digitalRead(ctr.IO4) == 0 && digitalRead(ctr.IO5) == 0)
+    if(digitalRead(ctr.IO1) == 1 && digitalRead(ctr.IO2) == 0 && digitalRead(ctr.IO3) == 0 && digitalRead(ctr.IO4) == 0 && digitalRead(ctr.IO5) == 0)
     {
         Serial.println("開燈");
         ctr.LightUp(c);
@@ -71,7 +70,7 @@ void Event_Listener()
         ctr.LightUp(c);
     }
     else if(digitalRead(ctr.IO5) == 1 && digitalRead(ctr.IO1) == 0)
-	{
+    {
         c = green;
         ctr.LightUp(c);
     }

@@ -11,10 +11,6 @@ class Red : public Color
             analogWrite(this->green, 255);
             analogWrite(this->blue, 255);
         }
-
-        void BrigthDown()
-        {
-        }
 };
 
 class Green : public Color
